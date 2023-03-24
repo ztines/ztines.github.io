@@ -1,0 +1,46 @@
+name: Bug Report
+description: Bugs in the software itself
+labels: bug
+body:
+- type: checkboxes
+  attributes:
+    label: Checklist
+    options:
+      - label: I have checked that this issue isn't addressed in [the FAQ](https://github.com/upscayl/upscayl#faq-).
+        required: true
+      - label: I have checked that this issue isn't addressed in any other issue or pull request.
+        required: true
+- type: textarea
+  attributes: 
+    label: Describe the Bug
+    description: 💥 What's wrong? Put logs here if you have them. To get logs, launch Upscayl using the commandline and the logs will show up on the console.
+  validations:
+    required: true
+- type: textarea
+  attributes: 
+    label: To Reproduce 
+    description: 🧙 How can we emulate the bug on our own machine? (Please write in steps)
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: 🤓 What should've happened?
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Version/Commit Hash
+    description: ✍️ What version of Upscayl did you use?
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: OS Specifics
+    description: 📝 Please write your GPU name and your OS version
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Screenshots
+    description: 🤳 Got screenshots?

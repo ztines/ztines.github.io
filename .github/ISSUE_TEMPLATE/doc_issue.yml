@@ -1,0 +1,28 @@
+name: Documentation Issue
+description: Something wrong with the docs
+labels: documentation
+body:
+- type: checkboxes
+  attributes:
+    label: Checklist
+    options:
+      - label: I have checked that this issue isn't addressed in [the FAQ](https://github.com/upscayl/upscayl#faq-).
+        required: true
+      - label: I have checked that this issue isn't addressed in any other issue or pull request.
+        required: true
+- type: textarea
+  attributes: 
+    label: Describe the Issue
+    description: 💥 What? Where? How? is wrong? or lacking? Explain yourself!
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: 🤓 What should be there instead?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Screenshots
+    description: 🤳 Got screenshots?
